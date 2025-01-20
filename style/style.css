@@ -1,6 +1,6 @@
 
 /* header style */
-.header, .curriculum{
+.header, .curriculum, .arrow{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -216,6 +216,34 @@ display: none;
     }
     .curriculum{
         margin-top: 240px;
+    }
+    
+}
+/* arrow style */
+.arrow{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+.box{
+    background-color: rgb(152, 187, 95);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: rgb(129, 129, 50);
+}
+/* responsive */
+@media screen and (max-width:576px) {
+    .arrow{
+        display: none;
     }
     
 }
