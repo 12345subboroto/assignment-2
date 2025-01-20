@@ -1,6 +1,6 @@
 
 /* header style */
-.header{
+.header, .curriculum{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -137,6 +137,85 @@ display: none;
     .banner-img img{
         padding-left: 10px;
         padding-right: 10px;
+    }
+    
+}
+/* curriculum style */
+.curriculum{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.curriculum-title{
+    text-align: center;
+    margin-top: 60px;
+}
+.curriculum-title{
+    color: rgba(0, 0, 0, 1);
+    font-size: 2.875rem;
+    font-weight: 700;
+}
+.curriculum-card{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px;
+
+}
+.card-1{
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to bottom,rgb(219, 237, 253),
+    rgba(16,16,16,0));
+}
+.card-2{
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to bottom,rgb(230, 229, 229),rgba(16,16,16,0));
+}
+.card-3{
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to bottom,rgb(241, 224, 224),rgba(16,16,16,0));
+}
+.curriculum-sub-title{
+    color: rgba(32, 32, 32, 1);
+    font-size: 1.533rem;
+    font-weight: 700;
+}
+.curriculum-card .card-1f{
+    text-decoration: none;
+    color: rgba(100, 200, 255, 1);
+    font-size: 0.994rem;
+    font-weight: 700;
+}
+.curriculum-card .card-2f{
+    text-decoration: none;
+    color:rgba(240, 170, 0, 1);
+    font-size: 0.994rem;
+    font-weight: 700;
+}
+.curriculum-card .card-3f{
+    text-decoration: none;
+    color:rgba(135, 0, 255, 1);
+    font-size: 0.994rem;
+    font-weight: 700;
+}
+/* responsive */
+@media screen and (max-width:576px) {
+    .curriculum-card{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .curriculum{
+        margin-top: 240px;
     }
     
 }
