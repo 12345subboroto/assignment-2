@@ -1,0 +1,142 @@
+
+/* header style */
+.header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+}
+.header-content img{
+    width: 60px;
+    height: 60px;
+}
+.header-title{
+    color: rgba(17, 17, 17, 1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-container ul{
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+.nav-container ul a{
+   text-decoration: none;
+}
+.home{
+    color: rgba(254, 163, 1, 1);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.about{
+    color: rgba(1, 172, 253, 1);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.admission{
+    color: rgba(93, 88, 239, 1);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.btn1{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(254, 163, 1, 1);
+    padding: 8px 40px;
+}
+.btn1:hover{
+    cursor: pointer;
+    background-color:rgb(196, 129, 13);
+    color: lightblue;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    
+    display: none;
+}
+hr{
+display: none;
+}
+/* responsive */
+@media screen and (max-width:576px) {
+    .header-title, .nav-container ul, .btn1{
+        display: none;
+        
+    } 
+    .menu{
+        display: block;
+        text-align: end;
+    }
+    hr{
+        display: block;
+    }
+    
+}
+/* banner style */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.banner-content{
+    max-width: 630px;
+    height: 310px;
+}
+.banner-title{
+    color: rgba(254, 163, 1, 1);
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.banner-t2{
+    color: rgba(17, 17, 17, 1);
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.banner-t3{
+    color:rgba(1, 172, 253, 1);
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.banner-description{
+    color: rgba(17, 17, 17, 1);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.btn2{
+    background-color: rgba(0, 0, 0, 1);
+    padding: 10px 40px;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+}
+.btn2:hover{
+    color: lightblue;
+    background-color: rgb(105, 28, 28);
+    cursor: pointer;
+}
+/* responsive */
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-img img{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
