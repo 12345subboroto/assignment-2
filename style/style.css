@@ -1,4 +1,11 @@
 
+
+.quicksand-simple {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+ 
 /* header style */
 .header, .curriculum, .arrow, .stories{
     max-width: 1140px;
@@ -59,9 +66,9 @@
     justify-content: space-between;
     align-items: center;
 }
-.menu{
-    
-    display: none;
+.menu{  
+
+  display: none;
 }
 hr{
 display: none;
@@ -74,13 +81,57 @@ display: none;
     } 
     .menu{
         display: block;
-        text-align: end;
+        position: relative;
+        right: -115px;
     }
     hr{
         display: block;
     }
     
 }
+/* marquee style */
+.marquee {
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+    width: 1140px;
+    white-space: nowrap;
+}
+
+.marquee p {
+    color: rgb(94, 74, 74);
+    font-size: 1rem;
+    font-weight: 700;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 576px) {
+    .marquee {
+        height: 70px; 
+        width: 100%; 
+    }
+
+    .marquee p {
+        line-height: 35px; 
+    }
+}
+
 /* banner style */
 .banner{
     display: flex;
