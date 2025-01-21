@@ -299,6 +299,23 @@ display: none;
     height: 73px;
     padding-left: 40px;
 }
+.btn5{
+    background-color: rgba(60, 216, 232, 1);
+    padding: 14px 18px;
+    border: 0px;
+    border-radius: 47px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.958rem;
+    font-weight: 500;
+    position: relative;
+    left: 38px;
+    top: -25px;
+}
+.btn5:hover{
+    cursor: pointer;
+    background-color:rgb(26, 128, 139);
+    color: rgb(176, 206, 206);
+}
  .stories-right{
     width: 590px;
     height: 610px;
@@ -326,13 +343,51 @@ display: none;
 }
 .btn3{
     background-color: rgba(149, 178, 38, 1);
-    padding: 4px 19px;
+    padding: 8px 19px;
     border-radius: 47px;
     border: none;
     color: rgba(255, 255, 255, 1);
     font-size: 0.958rem;
     font-weight: 500;
+    position: relative;
+    left: 38px;
+    top: -20px;
 }
+.btn6{
+    background-color: rgba(93, 88, 240, 1);
+    padding: 8px 19px;
+    border-radius: 47px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.958rem;
+    font-weight: 500;
+    position: relative;
+    left: 38px;
+    top: -20px;
+}
+.btn6:hover{
+    cursor: pointer;
+    background-color:rgb(32, 30, 107);
+    color: rgb(176, 206, 206);
+}
+.btn7{
+    background-color: rgb(245, 87, 100);
+    padding: 8px 19px;
+    border-radius: 47px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.958rem;
+    font-weight: 500;
+    position: relative;
+    left: 38px;
+    top: -20px;
+}
+.btn7:hover{
+    cursor: pointer;
+    background-color:rgb(170, 53, 68);
+    color: rgb(176, 206, 206);
+}
+
 .btn3:hover{
     cursor: pointer;
     background-color:rgb(116, 138, 27) ;
@@ -402,12 +457,14 @@ display: none;
     font-size: 2rem;
     font-weight: 700;
 } 
+
 .footer-description{
     color: rgba(255, 255, 255, 1);
     font-size: 1.25rem;
     font-weight: 400;
     width: 399px;
     height: 100px;
+    margin-left: 10px;
 }
 .footer-middle{
     display: flex;
