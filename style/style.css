@@ -11,6 +11,11 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+@media screen and (max-width:576px) {
+    .header, .curriculum, .arrow, .stories{
+        max-width: 100%;
+    }
+}
 .header-content{
     display: flex;
     align-items: center;
@@ -82,10 +87,14 @@ display: none;
     .menu{
         display: block;
        position: relative;
-        right: -15px; 
+       right: -100px;
     }
     hr{
         display: block;
+    }
+    .header-content img{
+        width: auto;
+        height: auto;
     }
     
 }
@@ -102,8 +111,8 @@ display: none;
     color: rgb(94, 74, 74);
     font-size: 0.875rem;
     font-weight: 700;
-    /* width: auto;
-    height: 100%; */
+    width: auto;
+    height: 100%;
     line-height: 50px;
     transform: translateX(100%);
     animation: scroll-left 20s linear infinite;
@@ -175,6 +184,9 @@ display: none;
     background-color: rgb(105, 28, 28);
     cursor: pointer;
 }
+.banner-img img{
+    width: 100%;
+}
 /* responsive */
 @media screen and (max-width:576px) {
     .banner{
@@ -188,7 +200,7 @@ display: none;
     .banner-img img{
         padding-left: 10px;
         padding-right: 10px;
-        max-width: 100%;
+        width: 90%;
         height: auto;
     }
     
@@ -474,6 +486,7 @@ display: none;
     color: yellow;
     cursor: pointer;
 }
+
 /* responsive */
 @media screen and (max-width:576px) {
     .stories-left{
@@ -493,6 +506,15 @@ display: none;
     .box1 img{
         width: 100%;
         height: auto;
+    }
+    .stories-sub-title{
+        padding: 5px;
+    }
+    .btn3, .btn6, .btn7 {
+        left: 5px;
+    }
+    .btn-primary{
+        text-align: center;
     }
 
 }
@@ -550,7 +572,6 @@ display: none;
     .footer{
         flex-direction: column;
         padding: 40px 10px 25px 20px;
-        text-align: center;
     }
     .footer-section{
         height: auto;
@@ -562,5 +583,6 @@ display: none;
     .footer-description{
         width: 100%;
         height: auto;
+        margin-left: 0px;
     }
 }
