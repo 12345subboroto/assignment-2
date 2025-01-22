@@ -482,7 +482,9 @@ display: none;
     .stories-right{
         grid-template-columns: repeat(2,1fr);
         width: 100%;
-        gap: 10px;
+        height: auto;
+        gap: 15px;
+        padding: 10px;
     }
     .box1{
         width: 100%;
