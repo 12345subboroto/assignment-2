@@ -87,7 +87,7 @@ display: none;
     .menu{
         display: block;
        position: relative;
-       right: -100px;
+       right: -90px;
     }
     hr{
         display: block;
